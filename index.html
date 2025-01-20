@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="title-top">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div id="top">
+        <div>
+            <ul class="container top-top">
+                <li>Nome Cognome</li>
+                <li>Km da percorrere</li>
+                <li>Fascia d'età</li>
+            </ul>
+            <ul class="container top-bottom">
+                <li>
+                    <input type="search" name="nome" placeholder="Scrivi nome e cognome..." id="name">
+                </li>
+                <li>
+                    <input type="search" name="km" placeholder="Scrivi i km da percorrere..." id="km">
+                </li>
+                <li>
+                    <select name="Fascia d'età" id="eta">
+                        <option value="min">Minorenne</option>
+                        <option value="mag">Maggiorenne</option>
+                        <option value="over">Over 60</option>
+                      </select>
+                </li>
+            </ul>
+        </div>
+        <div class="container container-btn">
+            <input type="submit" name="invia" id="invia">
+            <input type="reset" name="reset" id="reset">
+        </div>
+    </div>
+    <div id="container-bottom">
+        <h1 id="title-bottom">IL TUO BIGLIETTO</h1>
+        <div id="bottom">
+            <h4 id="subtitle-bottom">DETTAGLIO PASSEGGERO</h4>
+            <ul class="container bottom-top">
+                <li><strong>Nome Passeggero</strong></li>
+                <li><strong>Offerta</strong></li>
+                <li><strong>Carrozza</strong></li>
+                <li><strong>Codice CP</strong></li>
+                <li><strong>Costo Biglietto</strong></li>
+            </ul>
+            <ul class="container bottom-bottom">
+                <li id="name-b"></li>
+                <li id="offerta"></li>
+                <li id="carrozza"></li>
+                <li id="cp"></li>
+                <li id="costo"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
