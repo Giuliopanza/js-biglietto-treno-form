@@ -10,11 +10,11 @@ let submit = document.getElementById("invia");
 
 let reset = document.getElementById("reset");
 
-let prezzoBase = 0.21 * km.value
+/*let prezzoBase = 0.21 * km.value
 
 const scontomin = 0.20
 
-const scontoover = 0.40
+const scontoover = 0.40*/
 
 let prezzofinale;
 
