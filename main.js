@@ -10,11 +10,9 @@ let submit = document.getElementById("invia");
 
 let reset = document.getElementById("reset");
 
-/*let prezzoBase = 0.21 * km.value
-
 const scontomin = 0.20
 
-const scontoover = 0.40*/
+const scontoover = 0.40
 
 let prezzofinale;
 
@@ -28,13 +26,9 @@ let carrozza = document.getElementById("carrozza");
 
 let cp = document.getElementById("cp");
 
-namefinal.textContent = name.value ;
-    
-carrozza.textContent = Math.floor(Math.random() * 9) + 1 ;
-
-cp.textContent = Math.floor(Math.random() * 99999) + 10000 ;
-
 submit.addEventListener("click", function() {
+
+    let prezzoBase = 0.21 * km.value
 
     if (eta.value == "min"){
         container.style.display = 'block';
@@ -58,13 +52,20 @@ submit.addEventListener("click", function() {
         offerta.textContent = `Nessuna offerta`
     }
 
-    costo.textContent = prezzofinale ;
+    costo.textContent = prezzofinale.toFixed (2) ;
+
+    namefinal.textContent = name.value ;
+    
+    carrozza.textContent = Math.floor(Math.random() * 9) + 1 ;
+    
+    cp.textContent = Math.floor(Math.random() * 99999) + 10000 ;
 
 })
 
 reset.addEventListener("click", function() {
     name.value = ``
     km.value = ``
+    container.style.display = 'none';
 })
 
 
